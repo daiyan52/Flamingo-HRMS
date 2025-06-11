@@ -36,7 +36,9 @@ mit
 
 
 # Install bench CLI
+```bash
 pip3 install frappe-bench
+```
 
 # Initialize bench
 bench init frappe-bench --frappe-branch version-15
