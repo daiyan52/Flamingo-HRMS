@@ -31,3 +31,28 @@ Pre-commit is configured to use the following tools for checking and formatting 
 ### License
 
 mit
+
+### HRMS Installtion
+
+
+# Install bench CLI
+pip3 install frappe-bench
+
+# Initialize bench
+bench init frappe-bench --frappe-branch version-15
+cd frappe-bench
+
+
+# Create a new site
+bench new-site your-site-name.com
+
+# Get ERPNext and HRMS
+bench get-app erpnext --branch version-15
+bench get-app hrms --branch version-15
+
+# Install apps on your site
+bench --site your-site-name.com install-app erpnext
+bench --site your-site-name.com install-app hrms
+
+
+bench start
