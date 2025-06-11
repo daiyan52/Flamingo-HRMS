@@ -44,8 +44,10 @@ cd frappe-bench
 
 
 # Create a new site
-bench new-site your-site-name.com
 
+```bash
+bench new-site your-site-name.com
+```
 # Get ERPNext and HRMS
 bench get-app erpnext --branch version-15
 bench get-app hrms --branch version-15
