@@ -41,7 +41,10 @@ pip3 install frappe-bench
 # Initialize bench
 bench init frappe-bench --frappe-branch version-15
 cd frappe-bench
-
+```bash
+bench init frappe-bench --frappe-branch version-15
+cd frappe-bench
+```
 
 # Create a new site
 
@@ -49,12 +52,19 @@ cd frappe-bench
 bench new-site your-site-name.com
 ```
 # Get ERPNext and HRMS
+```bash
 bench get-app erpnext --branch version-15
 bench get-app hrms --branch version-15
+```
+
 
 # Install apps on your site
+```bash
 bench --site your-site-name.com install-app erpnext
 bench --site your-site-name.com install-app hrms
+```
 
 
+```bash
 bench start
+```
