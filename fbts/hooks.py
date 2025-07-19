@@ -8,6 +8,35 @@ app_license = "mit"
 # Apps
 # ------------------
 
+
+
+
+fixtures = [
+    "Client Script",
+    "Print Format",
+    {"dt": "Role", "filters": [["role_name", "=", "Guest"]]}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
@@ -132,7 +161,9 @@ app_license = "mit"
 # override_doctype_class = {
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
-
+whitelisted_methods = [
+    "fbts.api.user.get_logged_user"
+]
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -242,3 +273,6 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+cors = {
+    "allow_origins": ["http://localhost:5173"]  # Your frontend URL
+}
